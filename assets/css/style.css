@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color:rgb(250, 248, 246);
+    background-size: cover;
+    border: rgb(250, 248, 246) solid 2px;
+}
+
+h1 {
+    font-family:'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(193, 224, 214);
+    padding: 20px;
+}
+
+.first-picture {
+    display: block;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    width: 75px; 
+    height: auto;
+    background-color: rgb(153, 30, 30);
+    color: white;
+}
+
+footer {
+    height: 25vh;
+    background-color: rgb(193, 224, 214);
+    margin-top: 0;
+    line-height: 60px;
+    text-align: center;
+    
+}
+
+figcaption {
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+}
+
+.text-center {
+    text-align: center;
+    padding: 10px;
+}
+
+.d-block {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    max-width: 50vw;
+    height: auto;
+    justify-content: center;
+    border: 1px black solid;
+}      
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+    header, footer {
+        background-color:rgb(141, 192, 207);
+        background-color: 100%;
+    }
+    .first-picture {
+        width: 300px;
+    }
+
+    figcaption {
+        font-size: 18px;
+    }
+}
