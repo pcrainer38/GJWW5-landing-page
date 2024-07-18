@@ -84,8 +84,13 @@ figcaption {
         background-color:rgb(141, 192, 207);
         background-color: 100%;
     }
+
+    h1 {
+        text-shadow: 4px 4px 4px grey;
+    }
+
     .first-picture {
-        width: 300px;
+        width: 75%;
     }
 
     figcaption {
