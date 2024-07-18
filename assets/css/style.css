@@ -9,11 +9,12 @@ main {
     border: rgb(250, 248, 246) solid 2px;
 }
 
-h1, h2 {
+h1 {
     font-family:'Dancing Script', cursive;
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    text-shadow: 3px 3px 3px grey;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
 
 .first-picture {
     display: block;
-    width: 500px;
+    width: 35vw;
     height: auto;
     border: 2px solid black;
     margin: 10px auto;
@@ -45,18 +46,18 @@ button {
 }
 
 footer {
-    height: 25vh;
+    height: auto;
     background-color: rgb(193, 224, 214);
-    margin-top: 0;
+    margin-top: 10px;
     line-height: 60px;
     text-align: center;
-    
 }
 
 figcaption {
     margin-bottom: 30px;
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
+    text-shadow: 2px 2px 2px grey;
 }
 
 .text-center {
@@ -68,14 +69,14 @@ figcaption {
     display: block;
     margin: auto;
     padding: 20px;
-    max-width: 50vw;
+    max-width: 35vw;
     height: auto;
     justify-content: center;
     border: 1px black solid;
 }      
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: black;
+    background-color: blue;
 }
 
 @media screen and (max-width: 768px) {
