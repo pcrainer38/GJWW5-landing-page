@@ -51,6 +51,7 @@ footer {
     background-color: var(--light-green);
     line-height: 60px;
     text-align: center;
+    opacity: .75;
     background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
 }
 
@@ -100,19 +101,19 @@ figcaption {
 
 /* slider */
 .toggle {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     display: block;
     font-size: 12px;
-    width: 200px;
+    width: 175px;
     background-color: rgba(76, 175, 80, 0.15)
 }
 
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 50px;
     height: 34px;
   }
 
@@ -197,4 +198,46 @@ input:checked + .slider:before {
     .d-block {
         max-width: 100%;
     }
+
+    /* slider */
+    .toggle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        font-size: 10px;
+        width: 150px;
+        background-color: rgba(76, 175, 80, 0.15)
+}
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 20px;
+      }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 2px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
 }
