@@ -70,7 +70,9 @@ figcaption {
     display: block;
     width: 35vw;
     height: auto;
-    border: 2px solid black;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
     margin: 10px auto;
     margin-bottom: 10px;
     margin-top: 30px;
