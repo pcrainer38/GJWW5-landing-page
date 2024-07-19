@@ -14,6 +14,7 @@ h1 {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    color: black;
     text-shadow: 3px 3px 3px grey;
 }
 
@@ -22,16 +23,9 @@ header {
     justify-content: center;
     background-color:rgb(193, 224, 214);
     padding: 20px;
-}
-
-.first-picture {
-    display: block;
-    width: 35vw;
-    height: auto;
-    border: 2px solid black;
-    margin: 10px auto;
-    margin-bottom: 10px;
-    margin-top: 30px;
+    opacity: .75;
+    background-image: linear-gradient(to right, rgba(255,0,0,.75),rgba(255,165,0,.75),rgba(255,255,0,.75),rgba(0,128,0,.75),rgba(0,0,255,.75),rgba(75,0,130,.75),rgba(238,130,238,.75));
+    
 }
 
 form {
@@ -51,6 +45,7 @@ footer {
     margin-top: 10px;
     line-height: 60px;
     text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,.75),rgba(255,165,0,.75),rgba(255,255,0,.75),rgba(0,128,0,.75),rgba(0,0,255,.75),rgba(75,0,130,.75),rgba(238,130,238,.75));
 }
 
 figcaption {
@@ -58,6 +53,22 @@ figcaption {
     font-family: 'Dancing Script', cursive;
     font-size: 24px;
     text-shadow: 2px 2px 2px grey;
+}
+
+
+.navbar {
+    color: black;
+    font-weight: bold;
+}
+
+.first-picture {
+    display: block;
+    width: 35vw;
+    height: auto;
+    border: 2px solid black;
+    margin: 10px auto;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .text-center {
@@ -78,6 +89,7 @@ figcaption {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: blue;
 }
+
 
 @media screen and (max-width: 768px) {
     header, footer {
