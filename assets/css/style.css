@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+:root {
+    --light: rgb(250, 248, 246);
+    --light-green: rgb(193, 224, 214);
+    --light-blue: rgb(141, 192, 207);
+}
+
 main {
-    background-color:rgb(250, 248, 246);
+    background-color: var(--light);
     background-size: cover;
-    border: rgb(250, 248, 246) solid 2px;
 }
 
 h1 {
@@ -21,10 +26,10 @@ h1 {
 header {
     display: flex;
     justify-content: center;
-    background-color:rgb(193, 224, 214);
+    background-color:var(--light-green);
     padding: 20px;
     opacity: .75;
-    background-image: linear-gradient(to right, rgba(255,0,0,.75),rgba(255,165,0,.75),rgba(255,255,0,.75),rgba(0,128,0,.75),rgba(0,0,255,.75),rgba(75,0,130,.75),rgba(238,130,238,.75));
+    background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
     
 }
 
@@ -36,16 +41,16 @@ button {
     width: 75px; 
     height: auto;
     background-color: rgb(153, 30, 30);
-    color: white;
+    color: var(--light);
 }
 
 footer {
     height: auto;
-    background-color: rgb(193, 224, 214);
+    background-color: var(--light-green);
     margin-top: 10px;
     line-height: 60px;
     text-align: center;
-    background-image: linear-gradient(to right, rgba(255,0,0,.75),rgba(255,165,0,.75),rgba(255,255,0,.75),rgba(0,128,0,.75),rgba(0,0,255,.75),rgba(75,0,130,.75),rgba(238,130,238,.75));
+    background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
 }
 
 figcaption {
@@ -83,7 +88,9 @@ figcaption {
     max-width: 35vw;
     height: auto;
     justify-content: center;
-    border: 1px black solid;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
 }      
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -93,7 +100,7 @@ figcaption {
 
 @media screen and (max-width: 768px) {
     header, footer {
-        background-color:rgb(141, 192, 207);
+        background-color:var(--light-blue);
         background-color: 100%;
     }
 
