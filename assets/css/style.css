@@ -4,9 +4,10 @@
 }
 
 :root {
-    --light: rgb(250, 248, 246);
+    --light: rgb(250, 245, 239);
     --light-green: rgb(193, 224, 214);
     --light-blue: rgb(141, 192, 207);
+    --dark: rgb(73, 73, 73);
 }
 
 main {
@@ -22,7 +23,7 @@ h1 {
     font-size: 40px;
     text-align: center;
     color: black;
-    text-shadow: 3px 3px 3px grey;
+    text-shadow: 3px 3px 3px var(--dark);
 }
 
 header {
@@ -48,7 +49,6 @@ button {
 footer {
     height: auto;
     background-color: var(--light-green);
-    margin-top: 10px;
     line-height: 60px;
     text-align: center;
     background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
@@ -63,7 +63,6 @@ figcaption {
 
 .navbar {
     color: black;
-    font-weight: bold;
 }
 
 .first-picture {
@@ -98,6 +97,83 @@ figcaption {
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: blue;
 }
+
+/* slider */
+.toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 12px;
+    width: 200px;
+    background-color: rgba(76, 175, 80, 0.15)
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+.slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* theme switcher*/
+.dark {
+    background-color: var(--dark);
+    color: var(--light);
+    border: 2px solid var(--dark);
+}
+
 
 
 @media screen and (max-width: 768px) {

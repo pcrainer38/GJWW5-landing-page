@@ -14,14 +14,27 @@
 
 </head>
 <body>
-    <header>
+  <header>
       <nav class="navbar">
-        <h1 class="text-center">Brandi Carlile's<br>
-        Girls Just Wanna Weekend 5</h1>
+        <div>
+          <h1 class="text-center">Brandi Carlile's<br>
+            Girls Just Wanna Weekend 5</h1>
+        </div>
       </nav>
     </header>
-    <main>
-        
+    <main class="main">
+      <div class="row toggle">
+        <div class="col">
+          <p>LIGHT MODE</p>
+        </div>
+        <label class="switch col">
+          <input type="checkbox" id="theme-switcher">
+          <span class="slider round"></span>
+        </label>
+        <div class="col">
+          <p>DARK MODE</p>
+        </div>
+      </div>
         <figure>
             <img class="first-picture" src="./assets/images/LaPam_in_MX_2024.JPG" alt="Pam and Laura">
             <figcaption class="text-center">Pam and Laura in Riviera Maya, Mexico</figcaption>
@@ -207,5 +220,6 @@
     <footer class="footer">
          <p>Made with ❤️ and CSS in 2024</p>
     </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
