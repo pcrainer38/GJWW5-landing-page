@@ -12,6 +12,8 @@
 main {
     background-color: var(--light);
     background-size: cover;
+    border: 2px solid var(--light);
+    padding: 10px;
 }
 
 h1 {
@@ -30,7 +32,6 @@ header {
     padding: 20px;
     opacity: .75;
     background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
-    
 }
 
 form {
@@ -60,7 +61,6 @@ figcaption {
     text-shadow: 2px 2px 2px grey;
 }
 
-
 .navbar {
     color: black;
     font-weight: bold;
@@ -71,7 +71,7 @@ figcaption {
     width: 35vw;
     height: auto;
     border: 5px solid transparent;
-    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image: linear-gradient(to top right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
     border-image-slice: 1;
     margin: 10px auto;
     margin-bottom: 10px;
