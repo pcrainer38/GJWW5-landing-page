@@ -96,7 +96,7 @@ figcaption {
 }      
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: blue;
+    background-color: #2196F3;
 }
 
 /* slider */
@@ -107,7 +107,6 @@ figcaption {
     display: block;
     font-size: 12px;
     width: 175px;
-    background-color: rgba(76, 175, 80, 0.15)
 }
 
 .switch {
