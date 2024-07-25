@@ -139,6 +139,7 @@ figcaption {
     -webkit-transition: .4s;
     transition: .4s;
   }
+
   
 input:checked + .slider {
     background-color: #2196F3;
@@ -172,6 +173,13 @@ input:checked + .slider:before {
     background-color: var(--dark);
     color: var(--light);
     border: 2px solid var(--dark);
+}
+
+
+.song {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
