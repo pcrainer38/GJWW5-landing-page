@@ -1,5 +1,6 @@
 const themeSwitcher = document.getElementById("theme-switcher");
 const main = document.querySelector(".main");
+const myAudio = document.getElementById("audio1");
 
 let mode = "light";
 
@@ -12,3 +13,10 @@ themeSwitcher.addEventListener("click", function() {
         main.setAttribute("class", "dark");
     }
 });
+
+const setHalfVolume = () =>
+    {
+        myAudio.volume = 0.3;
+    }
+
+setHalfVolume();
