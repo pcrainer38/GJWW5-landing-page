@@ -16,7 +16,7 @@ themeSwitcher.addEventListener("click", function() {
 
 const setHalfVolume = () =>
     {
-        myAudio.volume = 0.3;
+        myAudio.volume = 0.4;
     }
 
 setHalfVolume();

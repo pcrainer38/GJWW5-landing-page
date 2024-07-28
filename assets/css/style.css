@@ -175,14 +175,11 @@ input:checked + .slider:before {
     border: 2px solid var(--dark);
 }
 
-
 .song {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
 
 @media screen and (max-width: 768px) {
     header, footer {
@@ -207,16 +204,61 @@ input:checked + .slider:before {
     }
 
     /* slider */
+    .row {
+        display: flex;
+    }
+
     .toggle {
         position: absolute;
         top: 0;
         right: 0;
-        display: block;
-        font-size: 10px;
-        width: 150px;
+        display: flex;
+        font-size: 2.5px;
+        width: 75px;
         background-color: rgba(76, 175, 80, 0.15)
 }
 
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 10px;
+      }
+    
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 10px;
+        width: 10px;
+        left: 2px;
+        bottom: 3px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+
+    .toggle {
+        position: absolute;
+        margin-top: 5px;
+        top: 0;
+        right: 0;
+        display: flex;
+        font-size: 10px;
+        width: 150px;
+    }
+    
     .switch {
         position: relative;
         display: inline-block;
@@ -241,8 +283,8 @@ input:checked + .slider:before {
         content: "";
         height: 15px;
         width: 15px;
-        left: 2px;
-        bottom: 3px;
+        left: 4px;
+        bottom: 4px;
         background-color: white;
         -webkit-transition: .4s;
         transition: .4s;
