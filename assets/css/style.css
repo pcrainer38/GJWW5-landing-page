@@ -49,8 +49,6 @@ button {
 footer {
     height: auto;
     background-color: var(--light-green);
-    line-height: 60px;
-    text-align: center;
     opacity: .75;
     background-image: linear-gradient(to right, rgba(255,0,0,1),rgba(255,165,0,1),rgba(255,255,0,.75),rgba(0,128,0,.5),rgba(0,0,255,.75),rgba(75,0,130,1),rgba(238,130,238,1));
 }
@@ -97,6 +95,12 @@ figcaption {
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #2196F3;
+}
+
+.footer-text {
+    line-height: 60px;
+    text-align: center;
+    color: black;
 }
 
 /* slider */
@@ -181,7 +185,7 @@ input:checked + .slider:before {
     align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     header, footer {
         background-color:var(--light-blue);
         background-color: 100%;
@@ -252,6 +256,7 @@ input:checked + .slider:before {
     .toggle {
         position: absolute;
         margin-top: 5px;
+        margin-right: 5px;
         top: 0;
         right: 0;
         display: flex;
