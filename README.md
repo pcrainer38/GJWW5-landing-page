@@ -14,7 +14,7 @@
   
   ## Usage 
  
-  Use the navigation buttons to cycle through the picture carousel.
+  Use the navigation buttons to cycle through the picture carousel or allow the carousel to automatically progress.
 
   ## Questions
   
