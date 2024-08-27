@@ -185,6 +185,14 @@ input:checked + .slider:before {
     align-items: center;
 }
 
+/* countdown clock */
+.countdown-clock {
+    text-align: center;
+    font-family:'Dancing Script', cursive;
+    font-size: 22px;
+    text-shadow: 2px 2px 2px grey;
+}
+
 @media screen and (max-width: 1024px) {
     header, footer {
         background-color:var(--light-blue);
