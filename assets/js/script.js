@@ -39,7 +39,7 @@ let x = setInterval(function() {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
     // display the result in the element with id='demo'
-    document.getElementById("demo").innerHTML = days + " days " + hours + " h " + minutes + " mins";
+    document.getElementById("demo").innerHTML = days + " d " + hours + " h " + minutes + " m";
 
     // if the count down is finished, write some text
 
