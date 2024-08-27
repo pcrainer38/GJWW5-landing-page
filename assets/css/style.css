@@ -232,7 +232,7 @@ input:checked + .slider:before {
         font-size: 2.5px;
         width: 75px;
         background-color: rgba(76, 175, 80, 0.15)
-}
+    }
 
     .switch {
         position: relative;
@@ -306,4 +306,11 @@ input:checked + .slider:before {
         -webkit-transition: .4s;
         transition: .4s;
       }
+
+      .countdown-clock {
+        text-align: center;
+        font-family:'Dancing Script', cursive;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px grey;
+    }
 }
