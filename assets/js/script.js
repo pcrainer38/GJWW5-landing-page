@@ -14,12 +14,12 @@ themeSwitcher.addEventListener("click", function() {
     }
 });
 
-const setHalfVolume = () =>
+const setQuarterVolume = () =>
     {
-        myAudio.volume = 0.4;
+        myAudio.volume = 0.2;
     }
 
-setHalfVolume();
+setQuarterVolume();
 
 // set date we're counting down to
 let countDownDate = new Date("Jan 16, 2025").getTime();
@@ -33,7 +33,7 @@ let x = setInterval(function() {
     // find distance between now and the count down date
     let distance = countDownDate - now;
 
-    //time calculation for days
+    //time calculation for days, hours, minutes
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let  hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
@@ -52,6 +52,7 @@ let x = setInterval(function() {
 // Current temp
 
 let currWeatherEl = document.querySelector('#weather');
+let currConditionsEl = document.querySelector('#conditions');
 
 var apiKey = 'b25ce75b259c4e61caf9ce00a1f90876';
 
@@ -76,6 +77,15 @@ function searchApi() {
             temperature = Math.floor((temperature - 273) * 1.8 + 32);
             console.log(temperature);
             currWeatherEl.append(temperature);
+
+            let icon = data.weather[0].icon;
+            console.log(icon);
+            icon = 'https://openweathermap.org/img/wn/' + icon +'@2x.png';
+            let iconEl = document.createElement('img');
+            iconEl.setAttribute('class', 'icon');
+            iconEl.src = `${icon}`;
+            currConditionsEl.append(iconEl);
+
 
         })
 

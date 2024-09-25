@@ -97,10 +97,18 @@ figcaption {
     background-color: #2196F3;
 }
 
+
 .footer-text {
     line-height: 60px;
     text-align: center;
     color: black;
+}
+
+
+.icon {
+    width: auto;
+    height: 75px;
+    background-color: navy;
 }
 
 /* slider */
@@ -313,6 +321,12 @@ input:checked + .slider:before {
         -webkit-transition: .4s;
         transition: .4s;
       }
+
+      .icon {
+        width: auto;
+        height: 75px;
+        background-color: navy;
+    }
 
 
 }
