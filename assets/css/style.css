@@ -108,7 +108,7 @@ figcaption {
 .icon {
     width: auto;
     height: 75px;
-    background-color: navy;
+    background-color: rgb(38, 130, 190);
 }
 
 /* slider */
@@ -154,15 +154,15 @@ figcaption {
 
   
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: rgb(38, 130, 190);
   }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: rgb(38, 130, 190);
   }
   
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px rgb(38, 130, 190);
   }
   
 input:checked + .slider:before {
@@ -325,7 +325,7 @@ input:checked + .slider:before {
       .icon {
         width: auto;
         height: 75px;
-        background-color: navy;
+        background-color: rgb(38, 130, 190);
     }
 
 
